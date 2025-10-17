@@ -19,3 +19,16 @@ The number is 100
 Enter a number: 102
 The number is larger than 100
 """
+
+def greaterThan100(num):
+    if num > 100:
+        return "the number is larger than 100"
+    if num < 100:
+        return "the number is smaller than 100"
+    if num == 100:
+        return "the number is 100"
+
+x = float(input("number: "))
+print(
+    greaterThan100(x)
+)

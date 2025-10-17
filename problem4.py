@@ -30,6 +30,17 @@ Enter one side: 5
 Enter a second side: 15
 Enter third side: 12
 that is an obtuse triangle
-
-
 """
+
+a = float(input("enter a number: "))
+b = float(input("enter another number: "))
+c = float(input("enter another number: "))
+sides = [a,b,c]
+sides.sort()
+
+if sides[2]**2 == ( sides[0]**2 + sides[1]**2 ): # check for right triangle w/ pythagoreas
+    print("that is a right triangle")
+elif sides[2]**2 > ( sides[0]**2 + sides[1]**2 ):
+    print("that is an obtuse triangle")
+elif sides[2]**2 < ( sides[0]**2 + sides[1]**2 ):
+    print("that is an acute triangle")

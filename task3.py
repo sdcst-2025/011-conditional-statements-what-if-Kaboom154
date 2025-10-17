@@ -31,3 +31,19 @@ Enter a number: 10000
 
 
 """
+
+def function(num):
+    if num >= 1000:
+        print("3")
+    elif num >= 100:
+        print("2")
+    elif num >= 10:
+        print("1")
+    elif num >= 0:
+        print("0")
+
+print(
+    function(3),
+    function(212),
+    function(10000)
+      )

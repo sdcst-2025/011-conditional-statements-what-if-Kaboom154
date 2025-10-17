@@ -20,3 +20,14 @@ positive
 Enter a number: -1.2
 negative
 """
+
+def posNeg(num):
+    if num > 0:
+        return "positive"
+    if num < 0:
+        return "negative"
+    if num == 0:
+        return "zero"
+
+x = float(input("number: "))
+print(posNeg(x))
