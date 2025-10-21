@@ -38,6 +38,7 @@ c = float(input("enter another number: "))
 sides = [a,b,c]
 sides.sort()
 
+
 if sides[2]**2 == ( sides[0]**2 + sides[1]**2 ): # check for right triangle w/ pythagoreas
     print("that is a right triangle")
 elif sides[2]**2 > ( sides[0]**2 + sides[1]**2 ):

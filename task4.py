@@ -24,3 +24,4 @@ if bool1 == True:
     print("the sentence contains password")
 if bool1 == False:
     print("the sentence does not contain password")
+    

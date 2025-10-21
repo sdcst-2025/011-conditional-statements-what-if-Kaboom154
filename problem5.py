@@ -29,3 +29,16 @@ Enter c: 8
 the equation can not be factored
 
 """
+print("for the formula \"ax^2 + bx + c = 0\"")
+a = float(input("a = "))
+b = float(input("b = "))
+c = float(input("c = "))
+
+discriminant = b**2 - 4*a*c
+
+if type((discriminant)**(1/2)) == complex:
+    print("the equation can not be factored")
+elif int((discriminant)**(1/2)) == (discriminant)**(1/2):
+    print("the equation can be factored")
+else:
+    print("the equation can not be factored")

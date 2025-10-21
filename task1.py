@@ -29,6 +29,4 @@ def greaterThan100(num):
         return "the number is 100"
 
 x = float(input("number: "))
-print(
-    greaterThan100(x)
-)
+print(greaterThan100(x))
