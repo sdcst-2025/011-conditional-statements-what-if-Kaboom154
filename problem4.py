@@ -45,3 +45,6 @@ elif sides[2]**2 > ( sides[0]**2 + sides[1]**2 ):
     print("that is an obtuse triangle")
 elif sides[2]**2 < ( sides[0]**2 + sides[1]**2 ):
     print("that is an acute triangle")
+
+a = sides[2]*0.98
+b = sides[2]*1.02
