@@ -38,13 +38,12 @@ c = float(input("enter another number: "))
 sides = [a,b,c]
 sides.sort()
 
+a2 = (sides[2]**2)*0.98
+b2 = (sides[2]**2)*1.02
 
-if sides[2]**2 == ( sides[0]**2 + sides[1]**2 ): # check for right triangle w/ pythagoreas
+if a2 < ( sides[0]**2 + sides[1]**2 ) < b2: # check for right triangle w/ pythagoreas
     print("that is a right triangle")
-elif sides[2]**2 > ( sides[0]**2 + sides[1]**2 ):
+elif b2 >= ( sides[0]**2 + sides[1]**2 ):
     print("that is an obtuse triangle")
-elif sides[2]**2 < ( sides[0]**2 + sides[1]**2 ):
+elif a2 <= ( sides[0]**2 + sides[1]**2 ):
     print("that is an acute triangle")
-
-a = sides[2]*0.98
-b = sides[2]*1.02
